@@ -95,7 +95,7 @@ header {
 }
 
 .left_half h1 {
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .left_half h3 {
@@ -111,6 +111,43 @@ header {
 .right_half img {
     width: 60%;
     height: 40%;
+}
+
+.card {
+    border: 5px solid black;
+    width: 430px;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+}
+
+.project_info {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    row-gap: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.btn-link {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.btn-link a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 5px 10px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, darkslategrey, cornflowerblue);
+    border-radius: 5px;
+
 }
 
 
