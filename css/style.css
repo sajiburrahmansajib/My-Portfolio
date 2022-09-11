@@ -5,6 +5,15 @@
     font-family: "Josefin Sans", sans-serif;
 }
 
+#preloader {
+    background: #fff url(../images/loader2.gif) no-repeat center center;
+    background-size: 25%;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+}
+
 header {
     width: 100%;
 }
@@ -148,6 +157,68 @@ header {
     background-image: linear-gradient(to right, darkslategrey, cornflowerblue);
     border-radius: 5px;
 
+}
+
+
+
+.skillMain {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 25px;
+    margin-bottom: 30px;
+    margin: 5px 29px;
+}
+
+.exprence,
+.education,
+.languageSkill {
+    background-color: gray;
+    padding: 30px;
+}
+
+.skillMain img {
+    width: 50%;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 200px;
+}
+
+.imgDiv {
+    text-align: center;
+}
+
+.education a {
+    color: white;
+}
+
+.eduInfo {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.skill_title {
+    text-align: center;
+    background-color: rgb(70, 64, 64);
+    color: white;
+    padding: 10px 0px;
+
+}
+
+.skill_title h1 {
+    text-transform: uppercase;
+}
+
+.skill-container {
+    padding-left: 5px;
+}
+
+.skill-container li {
+    list-style-type: none;
+    margin: 20px 0px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    position: relative;
 }
 
 

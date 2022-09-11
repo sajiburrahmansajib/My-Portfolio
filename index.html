@@ -6,11 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <title>Sajibur Rahman </title>
 </head>
 
 <body>
+    <div id="preloader">
+
+    </div>
     <header>
         <div class="mainheader">
             <div class="logo">
@@ -22,7 +26,7 @@
                 <a href="#mainIntro">Home</a>
                 <a href="#project">Projects</a>
                 <a href="">Contuct Me</a>
-                <a href="">Skills</a>
+                <a href="#skill">Skills</a>
             </nav>
             <div class="header_btn_resume">
                 <a href="Documents/Md.Sajibur Rahman.pdf" target="_blank">Download Resume</a>
@@ -103,7 +107,7 @@
                 <div class="card">
                     <img src="project/cricket.PNG" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h2 class="card-title">Cricket League | Make Your Own Team</h2>
+                        <h2 class="card-title">Cricket | Make Your Own Team</h2>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of the card's content.</p>
                         <div class="btn-link">
@@ -128,12 +132,113 @@
             </div>
 
         </section>
+        <!-- skill section start -->
+        <section id="skill">
+            <div class="skillMain">
+                <div class="exprence">
+                    <div class="imgDiv">
+                        <img src="images/job-removebg-preview.png" alt="">
+                    </div>
+                    <div class="skill_title">
+                        <h1>Work Experience </h1>
+                    </div>
+
+                </div>
+                <div class="education">
+                    <div class="imgDiv">
+                        <img src="images/education-removebg-preview.png" alt="">
+                    </div>
+                    <div class="skill_title">
+                        <h1>Education & Training </h1>
+                    </div>
+                    <div class="eduInfo">
+                        <h4>1. Web Programing Course | Programming Hero</h4>
+                        <p style="padding-left: 15px;">
+                            2018-2022 <br>
+                            United International University <br>
+                            United City, Madani Avenue, Badda, Dhaka 1212, Bangladesh. <br>
+                            <a target="_blank"
+                                href="https://www.programming-hero.com/">https://www.programming-hero.com/</a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="eduInfo">
+                        <h4>2. Bsc In Computer Science</h4>
+                        <p style="padding-left: 15px;">
+                            2018-2022 <br>
+                            United International University <br>
+                            United City, Madani Avenue, Badda, Dhaka 1212, Bangladesh. <br>
+                            <a target="_blank" href="https://www.uiu.ac.bd/">https://www.uiu.ac.bd/</a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="eduInfo">
+                        <h4>3. Higher Secondary School Certificate</h4>
+                        <p style="padding-left: 15px;">
+                            2014-2015 <br>
+                            cantonmant Public School & College <br>
+                            Saidpur,Rangpur,Bangladesh <br>
+                            <a target="_blank" href="http://www.cpscs.edu.bd/">http://www.cpscs.edu.bd/</a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="eduInfo">
+                        <h4>4. Secondary School Certificate</h4>
+                        <p style="padding-left: 15px;">
+                            2011-2012 <br>
+                            Birganj Pilot Government High School <br>
+                            Birganj,Dinajpur,Rangpur,Bangladesh <br>
+                            <a target="_blank" href="http://www.bpghs.edu.bd/">http://www.bpghs.edu.bd/</a>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="languageSkill">
+                    <div class="imgDiv">
+                        <img src="images/skill-removebg-preview.png" alt="">
+                    </div>
+                    <div class="skill_title">
+                        <h1>Skills </h1>
+                    </div>
+                    <div class="skill-container">
+                        <ul>
+                            <li class="html">HTML</li>
+                            <li class="css">CSS</li>
+                            <li class="boot">Bootstrap</li>
+                            <li class="tail">Tailwind Css</li>
+                            <li class="java">JavaScript</li>
+                            <li class="python">Python</li>
+                            <li class="c">C</li>
+                            <li class="jango">Django</li>
+                            <li class="laravel">Laravel</li>
+                            <li class="squl">MySqul</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section>
             <h1>Copyright @ 2022 Sajibur Rahman</h1>
         </section>
     </footer>
+
+    <script>
+        const loader = document.getElementById('preloader');
+        window.addEventListener('load', function () {
+            let seconds = 0;
+            const intervalId = setInterval(() => {
+                seconds = ++seconds;
+                if (seconds === 3) {
+                    clearInterval(intervalId);
+                    loader.style.display = 'none';
+                }
+            }, 700)
+        })
+
+    </script>
 </body>
 
 </html>
