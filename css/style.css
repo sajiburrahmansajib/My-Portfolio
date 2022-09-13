@@ -25,7 +25,6 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(26, 28, 26);
-    position: fixed;
 }
 
 .mainheader .logo img {
@@ -46,6 +45,12 @@ header {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 6px;
+}
+
+.mainheader nav a:hover {
+    background-color: lightslategrey;
 }
 
 .mainheader .header_btn_resume a {
@@ -139,7 +144,6 @@ header {
     row-gap: 30px;
     margin-top: 40px;
     margin-bottom: 40px;
-
 }
 
 .btn-link {
@@ -159,14 +163,12 @@ header {
 
 }
 
-
-
 .skillMain {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 25px;
     margin-bottom: 30px;
-    margin: 5px 29px;
+    margin: 25px 29px;
 }
 
 .exprence,
@@ -214,6 +216,7 @@ header {
 }
 
 .skill-container li {
+    height: fit-content;
     list-style-type: none;
     margin: 20px 0px;
     font-weight: bolder;
@@ -228,4 +231,5 @@ footer {
     background-color: teal;
     padding: 50px;
     text-align: center;
+
 }

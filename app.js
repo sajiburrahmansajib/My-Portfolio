@@ -1,11 +1,3 @@
-console.log('first');
-console.log('second');
-let seconds = 0;
-function setInterval(() => {
-    console.log(++seconds);
-    if (seconds === 10) {
-        clearInterval(intervalId);
-    }
-}, 500)
-console.log('fourth');
-console.log('fifth');
+const array = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+const newArray = array.map(x => x * 2)
+console.log(newArray)

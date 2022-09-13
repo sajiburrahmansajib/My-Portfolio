@@ -51,16 +51,32 @@
     animation-name: python;
 }
 
+.skill-container li.c::after {
+    animation-name: c;
+}
+
+.skill-container li.django::after {
+    animation-name: django;
+}
+
+.skill-container li.laravel::after {
+    animation-name: laravel;
+}
+
+.skill-container li.mysqul::after {
+    animation-name: mysqul;
+}
+
 @keyframes html {
     to {
-        width: 50%;
+        width: 70%;
         background-color: #0ad171;
     }
 }
 
 @keyframes css {
     to {
-        width: 40%;
+        width: 60%;
         background-color: #0ad171;
     }
 }
@@ -88,7 +104,35 @@
 
 @keyframes python {
     to {
+        width: 60%;
+        background-color: #0ad171;
+    }
+}
+
+@keyframes c {
+    to {
         width: 50%;
+        background-color: #0ad171;
+    }
+}
+
+@keyframes django {
+    to {
+        width: 60%;
+        background-color: #0ad171;
+    }
+}
+
+@keyframes laravel {
+    to {
+        width: 30%;
+        background-color: #0ad171;
+    }
+}
+
+@keyframes mysqul {
+    to {
+        width: 70%;
         background-color: #0ad171;
     }
 }
