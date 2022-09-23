@@ -1,6 +1,18 @@
 @media only screen and (min-width: 320px) and (max-width: 800px) {
+    #r-download {
+        display: none;
+    }
+
+    body {
+        padding: 0px 15px;
+    }
+
     #iconMenu {
         display: block;
+    }
+
+    .mainheader {
+        width: 400px;
     }
 
     nav {
@@ -16,8 +28,93 @@
         display: none;
     }
 
+    .project_info {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 10px;
+        row-gap: 30px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .card {
+        border: 5px solid black;
+        width: 400px;
+        text-align: center;
+        padding: 15px;
+        box-shadow: 5px 5px 5px gray;
+        border-radius: 10px;
+    }
+
+    .left_half a {
+        width: 100%;
+    }
+
+    .card img {
+        border-radius: 12px;
+        width: 90%;
+    }
+
+    #mainIntro {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 400px;
+    }
+
+    .right_half img {
+        width: 160%;
+    }
+
+    .right_half {
+        margin-bottom: 30px;
+    }
+
+    .my-intro {
+        padding: 30px;
+    }
+
+    .skillMain {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+        column-gap: 25px;
+        margin-left: 0px;
+
+    }
+
+    .mainheader .logo img {
+        width: 130px;
+        height: 100px;
+        padding-left: 10px;
+    }
+
+    .exprence,
+    .education,
+    .languageSkill {
+        width: 400px;
+        margin: 0px;
+    }
+
     #navMenu {
         display: none;
+        width: 400px;
+        margin-left: 13px;
+    }
+
+    #preloader {
+        background: #fff url(../images/loader2.gif) no-repeat center center;
+        background-size: 90%;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 100;
+        margin: auto;
+    }
+
+    #newButton {
+        display: flex;
     }
 
     .header_btn_resume {
@@ -32,6 +129,14 @@
 
     .iconMenu {
         margin-right: 120px;
+    }
+
+    footer {
+        width: 400px;
+    }
+
+    .social-item {
+        width: 80%;
     }
 }
 

@@ -54,6 +54,10 @@ header {
     transition: .20s;
 }
 
+#newButton {
+    display: none;
+}
+
 
 #iconMenu {
     color: #0ad171;
