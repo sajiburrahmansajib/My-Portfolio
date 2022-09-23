@@ -16,6 +16,10 @@
         display: none;
     }
 
+    #navMenu {
+        display: none;
+    }
+
     .header_btn_resume {
         position: fixed;
         width: 40%;
@@ -28,5 +32,24 @@
 
     .iconMenu {
         margin-right: 120px;
+    }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1000px) {
+    #r-download {
+        width: 40%;
+    }
+
+    .mainheader {
+        width: 100%;
+        border: 10px solid crimson;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #navMenu {
+        display: none;
     }
 }
