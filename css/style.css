@@ -257,3 +257,21 @@ footer {
     text-align: center;
 
 }
+
+.social-item {
+    margin: auto;
+    width: 20%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.social-item li {
+    list-style-type: none;
+}
+
+.social-item li a {
+    font-size: 35px;
+    color: white;
+}
